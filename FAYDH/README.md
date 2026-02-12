@@ -1,4 +1,4 @@
-## FAYDH Platform
+## FAYDH Platform(Just documents, work is underway to develop them)a graduation project.
 
 FAYDH is a digital charitable platform designed to unify and organize in-kind donations and direct services through a single, transparent system. The platform connects donors, certified charitable organizations, beneficiaries, and delivery drivers to ensure that essential items such as food, clothing, and furniture reach those in need efficiently and reliably.
 
