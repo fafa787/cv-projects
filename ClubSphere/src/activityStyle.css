@@ -102,23 +102,23 @@ img {
 
 
 
-/* تعديل الفوتر */
+/* الفوتر */
 .footer {
     background: linear-gradient(to bottom, #012e70, #3b5a89);
     color: white;
     padding: 40px 0;
     font-size: 14px;
-    width: 100%;  /* الفوتر سيأخذ العرض الكامل */
-    margin-top: auto; /* هذا سيجعل الفوتر يظل في أسفل الصفحة */
+    width: 100%;  
+    margin-top: auto;
     margin-bottom: 0;
 }
 
 /* الفوتر يحتوي على أربعة أقسام مع توزيع المسافات */
 .footer-container {
     display: flex;
-    justify-content: space-between; /* توزيع الأقسام بالتساوي */
-    align-items: flex-start; /* محاذاة الأقسام من الأعلى */
-    width: 100%; /* تأكد من أن الفوتر يغطي العرض الكامل */
+    justify-content: space-between; 
+    align-items: flex-start; 
+    width: 100%; 
     margin-bottom: -20px;
 }
 
@@ -127,21 +127,21 @@ img {
 .footer-section2,
 .footer-section3,
 .footer-section4 {
-    flex: 1; /* لكل قسم عرض متساوي */
+    flex: 1; 
     margin: 8px;
-    padding: 0 15px; /* إضافة بعض الحشو داخل الأقسام */
+    padding: 0 15px; 
 }
 
-/* إضافة خط عمودي بين الأقسام */
+
 .footer-section1:not(:last-child),
 .footer-section2:not(:last-child) {
-    border-right: 2px solid #ddd;  /* إضافة خط عمودي بين الأقسام */
+    border-right: 2px solid #ddd;  
     padding-left: 50px;
 }
 
 .footer-section2 {
     padding-right: 50px;
-    margin-left: -22px; /* تحريك القسم الثاني إلى اليسار بمقدار 20px */
+    margin-left: -22px; 
 }
 
 /* تنسيق الروابط في الفوتر */
@@ -187,92 +187,92 @@ img {
 /* تنسيق الأيقونات في قسم Contact Us */
 .social-icons {
     display: flex;
-    justify-content: flex-start;  /* ترتيب الأيقونات على يسار الحاوية */
-    gap: 27px;  /* مسافة بين الأيقونات */
+    justify-content: flex-start;  
+    gap: 27px;  
     color: aliceblue;
 }
 
 .social-icons a {
     display: block;
-    width: 45px;  /* عرض الأيقونة */
-    height: 45px;  /* ارتفاع الأيقونة */
-    transition: transform 0.3s ease; /* إضافة تأثير التحريك عند المرور بالماوس */
+    width: 45px;  
+    height: 45px; 
+    transition: transform 0.3s ease; 
 }
 
 .social-icons a img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* الحفاظ على تناسق الأيقونة */
-    filter: brightness(0) invert(1); /* تحويل الصورة إلى اللون الأبيض */
+    object-fit: contain; 
+    filter: brightness(0) invert(1); 
 }
 
-/* عند المرور بالماوس على الأيقونة */
+
 .social-icons a:hover {
-    transform: scale(1.1); /* تكبير الأيقونة عند المرور */
+    transform: scale(1.1);
 }
 
 .social-icons a img:hover {
-    filter: brightness(0.5);  /* تغيير السطوع عند المرور */
+    filter: brightness(0.5); 
 }
 
 /* Footer responsive design */
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
-        align-items: center;  /* محاذاة العناصر في الوسط */
+        align-items: center; 
     }
     
     .footer-section1, .footer-section2, .footer-section3, .footer-section4 {
-        flex: 1; /* كل قسم يشغل عرض متساوي */
-        margin: 8px 0; /* إضافة مسافة بين الأقسام */
+        flex: 1; 
+        margin: 8px 0;
         padding: 15px;
     }
     
     .footer-section2 {
-        margin-left: 0; /* إزالة المسافة السلبية */
-        padding-right: 0; /* إزالة الحشو على اليمين */
+        margin-left: 0; 
+        padding-right: 0; 
     }
     
     .social-icons {
-        justify-content: center; /* محاذاة الأيقونات في وسط الفوتر */
-        gap: 15px; /* تقليل المسافة بين الأيقونات */
+        justify-content: center;
+        gap: 15px; 
     }
 
     .footer-smallprint {
-        flex-direction: column; /* ترتيب النصوص عموديًا */
-        align-items: center; /* محاذاة النصوص في الوسط */
-        font-size: 11px;  /* تقليل حجم الخط */
+        flex-direction: column; 
+        align-items: center; 
+        font-size: 11px;  
     }
 
     .footer-map iframe {
-        height: 250px; /* تقليل ارتفاع الخريطة في الشاشات الصغيرة */
+        height: 250px;
     }
 }
 
-/* تعديل تنسيق الفوتر الصغير */
+/*  تنسيق الفوتر الصغير */
 .footer-smallprint {
     display: flex;
-    justify-content: space-between;  /* توزيع المسافات بين النصين */
+    justify-content: space-between; 
     align-items: center;
     font-size: 12px;
     color: #ddd;
-    padding: 0 20px;  /* إضافة مسافة بين النصوص وأطراف الفوتر */
+    padding: 0 20px; 
     width: 100%;
     margin-top: 5px;
 }
 
 /* تنسيق الخط الأفقي */
 .footer-line {
-    height: 1.75px; /* سمك الخط */
-    background-color: #ddd; /* لون الخط */
-    margin: 10px 15px 0px 15px; /* المسافة حول الخط */
+    height: 1.75px; 
+    background-color: #ddd;
+    margin: 10px 15px 0px 15px; 
 }
 
-/* النصوص على اليسار واليمين */
+
 .footer-left,
 .footer-right {
-    margin: 0;  /* إزالة أي مسافة إضافية */
-    padding: 0; /* إزالة أي مسافة إضافية */
+    margin: 0;  
+    padding: 0;
 }
 
 /* تنسيق الخريطة داخل الفوتر */
@@ -285,19 +285,20 @@ img {
 
 .footer-map iframe {
     width: 100%;
-    height: 175px; /* يمكنك تعديل الارتفاع حسب حاجتك */
+    height: 175px; 
     border: none;
-    margin-top: 10px;  /* مسافة بين العنوان والخريطة */
+    margin-top: 10px;  
 }
 
 .footer-section4 {
     display: flex;
-    justify-content: flex-start; /* محاذاة الشعار لليسار */
+    justify-content: flex-start; 
     align-items: center;
-    margin-left: 7px; /* إضافة مسافة يسارية */
+    margin-left: 7px; 
 }
 
 .footer-logo {
-    width: 300px; /* عرض الشعار */
+    width: 300px;
     height: 300px;
+
 }
