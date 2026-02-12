@@ -19,11 +19,11 @@ h1{
 }
 
 header {
-    position: fixed; /* Fixes the header at the top */
+    position: fixed; 
     top: 0;
     left: 0;
     height:61px;
-    width: 100%; /* Ensures it spans the full width */
+    width: 100%; 
     background: linear-gradient(to bottom, #012e70, #3b5a89);
     color: white;
     padding: 20px;
@@ -31,7 +31,7 @@ header {
     align-items: center;
     justify-content: center; 
     font-size: 50px;  
-    z-index: 1000; /* Ensures it's above other elements */
+    z-index: 1000; 
 }
 .logo{
 	position:absolute;
@@ -110,9 +110,9 @@ button:hover {
 /* الفوتر يحتوي على أربعة أقسام مع توزيع المسافات */
 .footer-container {
     display: flex;
-    justify-content: space-between; /* توزيع الأقسام بالتساوي */
-    align-items: flex-start; /* محاذاة الأقسام من الأعلى */
-    width: 100%; /* تأكد من أن الفوتر يغطي العرض الكامل */
+    justify-content: space-between; 
+    align-items: flex-start; 
+    width: 100%; 
 }
 
 /* كل قسم في الفوتر */
@@ -120,20 +120,20 @@ button:hover {
 .footer-section2,
 .footer-section3 ,
 .footer-section4{
-    flex: 1; /* لكل قسم عرض متساوي */
+    flex: 1; 
     margin: 8px;
-    padding: 0 15px; /* إضافة بعض الحشو داخل الأقسام */
+    padding: 0 15px; 
 }
 
 /* إضافة خط عمودي بين الأقسام */
 .footer-section1:not(:last-child),
 .footer-section2:not(:last-child) {
-    border-right: 2px solid #ddd;  /* إضافة خط عمودي بين الأقسام */
+    border-right: 2px solid #ddd; 
     padding-left: 50px;
 }
 .footer-section2{
     padding-right: 50px;
-    margin-left: -22px; /* تحريك القسم الثاني إلى اليسار بمقدار 20px */
+    margin-left: -22px; 
     
 }
 
@@ -181,32 +181,32 @@ button:hover {
 /* تنسيق الأيقونات في قسم Contact Us */
 .social-icons {
     display: flex;
-    justify-content: flex-start;  /* ترتيب الأيقونات على يسار الحاوية */
-    gap: 27px;  /* مسافة بين الأيقونات */
+    justify-content: flex-start;  
+    gap: 27px;  
     color: aliceblue;
 }
 
 .social-icons a {
     display: block;
-    width: 45px;  /* عرض الأيقونة */
-    height: 45px;  /* ارتفاع الأيقونة */
-    transition: transform 0.3s ease; /* إضافة تأثير التحريك عند المرور بالماوس */
+    width: 45px;  
+    height: 45px; 
+    transition: transform 0.3s ease; 
 }
 
 .social-icons a img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* الحفاظ على تناسق الأيقونة */
-    filter: brightness(0) invert(1); /* تحويل الصورة إلى اللون الأبيض */
+    object-fit: contain; 
+    filter: brightness(0) invert(1); 
 }
 
 /* عند المرور بالماوس على الأيقونة */
 .social-icons a:hover {
-    transform: scale(1.1); /* تكبير الأيقونة عند المرور */
+    transform: scale(1.1); 
 }
 
 .social-icons a img:hover {
-    filter: brightness(0.5);  /* تغيير السطوع عند المرور */
+    filter: brightness(0.5); 
 }
 
 .footer-left,
@@ -226,27 +226,27 @@ button:hover {
 /* تعديل تنسيق الفوتر الصغير */
 .footer-smallprint {
     display: flex;
-    justify-content: space-between;  /* توزيع المسافات بين النصين */
+    justify-content: space-between; 
     align-items: center;
     font-size: 12px;
     color: #ddd;
-    padding: 0 20px;  /* إضافة مسافة بين النصوص وأطراف الفوتر */
+    padding: 0 20px;  
     width: 100%;
-    margin-top: 5px; /* التأكد من أن الفوتر يغطي العرض الكامل */
+    margin-top: 5px; 
 }
 
 /* تنسيق الخط الأفقي */
 .footer-line {
-    height: 1.75px; /* سمك الخط */
-    background-color: #ddd; /* لون الخط */
-    margin: 20px 15px 0px 15px; /* المسافة حول الخط */
+    height: 1.75px; 
+    background-color: #ddd; 
+    margin: 20px 15px 0px 15px; 
 }
 
 /* النصوص على اليسار واليمين */
 .footer-left,
 .footer-right {
-    margin: 0;  /* إزالة أي مسافة إضافية */
-    padding: 0; /* إزالة أي مسافة إضافية */
+    margin: 0;  
+    padding: 0; 
 }
 
 /* تنسيق الخريطة داخل الفوتر */
@@ -259,21 +259,22 @@ button:hover {
 
 .footer-map iframe {
     width: 100%;
-    height: 175px; /* يمكنك تعديل الارتفاع حسب حاجتك */
+    height: 175px; 
     border: none;
-    margin-top: 10px;  /* مسافة بين العنوان والخريطة */
+    margin-top: 10px; 
 }
 
 .footer-section4 {
     display: flex;
-    justify-content: flex-start; /* محاذاة الشعار لليسار */
+    justify-content: flex-start;
     align-items: center;
-    margin-left: 7px; /* إضافة مسافة يسارية */
-    margin-left: 5px; /* إضافة مسافة يسارية */
+    margin-left: 7px; 
+    margin-left: 5px; 
 }
 
 .footer-logo {
-    width: 300px; /* عرض الشعار */
+    width: 300px;
     height: 300px;
 }
+
 
