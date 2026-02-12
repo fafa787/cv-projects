@@ -72,7 +72,7 @@
 	
 <footer class="footer">
         <div class="footer-container">
-             <!-- قسم يحتوي على الشعار -->
+             <!-- الشعار -->
            <div class="footer-section4">
             <img src="logo(white).svg" alt="Logo" class="footer-logo">
             </div>
@@ -119,10 +119,10 @@
             </div>
 
         </div>
-        <!-- الخط الأفقى -->
+       
         <div class="footer-line"></div>
     
-        <!-- النصوص الصغيرة في الفوتر -->
+      
         <div class="footer-smallprint">
             <span class="footer-left">© 2025 CLUBSPHERE. All rights reserved.</span>
             <span class="footer-right">Last update on: February 13, 2025 - 12:12 pm</span>
@@ -132,4 +132,5 @@
 
 
 </body>
+
 </html>
