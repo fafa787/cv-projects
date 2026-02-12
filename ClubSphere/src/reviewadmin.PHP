@@ -1,15 +1,15 @@
 html, body {
-    height: 100%; /* تأكد من أن الصفحة تأخذ الارتفاع الكامل */
-    margin: 0; /* إزالة المسافات الافتراضية */
+    height: 100%; 
+    margin: 0; 
 }
 /* ----- HEADER ----- */
 
 .header-title {
-    color: white;  /* White text */
-    font-size: 50px;  /* Adjust size */
+    color: white;  
+    font-size: 50px;  
     font-weight: bold;
-    margin-left: auto; /* Push it away from the logo */
-    margin-right: auto; /* Center it */
+    margin-left: auto; 
+    margin-right: auto; 
     text-align: center;
 }
 .Headerpart1 {
@@ -21,8 +21,8 @@ html, body {
     left: 0;
     right: 0;
     display: flex;
-    justify-content: space-between;  /* توزيع العناصر بين اليسار واليمين */
-    align-items: center;  /* محاذاة العناصر عموديًا في المنتصف */
+    justify-content: space-between; 
+    align-items: center; 
     padding:0 20px;
     margin-bottom: 5%;
 }
@@ -48,7 +48,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 200px; /* Increase this value to create more space */
+    padding-top: 200px; 
     padding-bottom: 250px; 
     min-height: 100%;
 }
@@ -62,11 +62,11 @@ body {
     box-shadow: 0 5px 18px rgba(0, 0, 0, 0.25);
     width: 50%;
     text-align: center;
-    margin-top: 25%; /* Adjust this value until the container is fully visible */
+    margin-top: 25%; 
     margin-bottom: 4%;
 }
 
-/* Change text color inside the container */
+
 h1, label {
     color: #012e70; /* Footer color */
 }
@@ -74,7 +74,7 @@ h1, label {
 .rating {
     display: flex;
     justify-content: center;
-    margin: 10px 0; /* Added spacing between ratings */
+    margin: 10px 0; 
 }
 
 textarea {
@@ -88,8 +88,8 @@ textarea {
     background: #f1f1f1;
     transition: 0.3s;
     color: #012e70;
-    resize: vertical; /* Allows users to resize only vertically */
-    min-height: 120px; /* Ensures it has a proper height */
+    resize: vertical; 
+    min-height: 120px; 
 }
 
 textarea:focus {
@@ -116,21 +116,21 @@ button {
     transition: 0.2s;
     font-weight: bold;
     text-transform: uppercase;
-    background: #012e70; /* Footer color */
+    background: #012e70; 
     color: white;
 }
 
 button:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    background: #3b5a89; /* Slightly lighter hover effect */
+    background: #3b5a89; 
 }
 
 
 
 /* الجزء الرئيسي الذي يحتوي على المحتوى */
 main {
-    flex-grow: 1; /* هذا يضمن أن المحتوى الرئيسي يأخذ المساحة المتبقية */
+    flex-grow: 1; 
 }
 
 /* تعديل الفوتر */
@@ -139,17 +139,17 @@ main {
     color: white;
     padding: 40px 0;
     font-size: 14px;
-    width: 100%;  /* الفوتر سيأخذ العرض الكامل */
-    margin-top: auto; /* هذا سيجعل الفوتر يظل في أسفل الصفحة */
+    width: 100%; 
+    margin-top: auto; 
     margin-bottom: 0;
 }
 
 /* الفوتر يحتوي على أربعة أقسام مع توزيع المسافات */
 .footer-container {
     display: flex;
-    justify-content: space-between; /* توزيع الأقسام بالتساوي */
-    align-items: flex-start; /* محاذاة الأقسام من الأعلى */
-    width: 100%; /* تأكد من أن الفوتر يغطي العرض الكامل */
+    justify-content: space-between; 
+    align-items: flex-start; 
+    width: 100%; 
     margin-bottom: -20px;
 }
 
@@ -160,7 +160,7 @@ main {
 .footer-section4 {
     flex: 1; /* لكل قسم عرض متساوي */
     margin: 8px;
-    padding: 0 15px; /* إضافة بعض الحشو داخل الأقسام */
+    padding: 0 15px; 
 }
 
 /* إضافة خط عمودي بين الأقسام */
@@ -172,7 +172,7 @@ main {
 
 .footer-section2 {
     padding-right: 50px;
-    margin-left: -22px; /* تحريك القسم الثاني إلى اليسار بمقدار 20px */
+    margin-left: -22px; 
 }
 
 /* تنسيق الروابط في الفوتر */
@@ -218,92 +218,92 @@ main {
 /* تنسيق الأيقونات في قسم Contact Us */
 .social-icons {
     display: flex;
-    justify-content: flex-start;  /* ترتيب الأيقونات على يسار الحاوية */
-    gap: 27px;  /* مسافة بين الأيقونات */
+    justify-content: flex-start;  
+    gap: 27px; 
     color: aliceblue;
 }
 
 .social-icons a {
     display: block;
-    width: 45px;  /* عرض الأيقونة */
-    height: 45px;  /* ارتفاع الأيقونة */
-    transition: transform 0.3s ease; /* إضافة تأثير التحريك عند المرور بالماوس */
+    width: 45px; 
+    height: 45px;  
+    transition: transform 0.3s ease; 
 }
 
 .social-icons a img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* الحفاظ على تناسق الأيقونة */
-    filter: brightness(0) invert(1); /* تحويل الصورة إلى اللون الأبيض */
+    object-fit: contain; 
+    filter: brightness(0) invert(1); 
 }
 
 /* عند المرور بالماوس على الأيقونة */
 .social-icons a:hover {
-    transform: scale(1.1); /* تكبير الأيقونة عند المرور */
+    transform: scale(1.1); 
 }
 
 .social-icons a img:hover {
-    filter: brightness(0.5);  /* تغيير السطوع عند المرور */
+    filter: brightness(0.5); 
 }
 
 /* Footer responsive design */
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
-        align-items: center;  /* محاذاة العناصر في الوسط */
+        align-items: center;  
     }
     
     .footer-section1, .footer-section2, .footer-section3, .footer-section4 {
-        flex: 1; /* كل قسم يشغل عرض متساوي */
-        margin: 8px 0; /* إضافة مسافة بين الأقسام */
+        flex: 1; 
+        margin: 8px 0; 
         padding: 15px;
     }
     
     .footer-section2 {
-        margin-left: 0; /* إزالة المسافة السلبية */
-        padding-right: 0; /* إزالة الحشو على اليمين */
+        margin-left: 0; 
+        padding-right: 0;
     }
     
     .social-icons {
-        justify-content: center; /* محاذاة الأيقونات في وسط الفوتر */
-        gap: 15px; /* تقليل المسافة بين الأيقونات */
+        justify-content: center; 
+        gap: 15px; 
     }
 
     .footer-smallprint {
-        flex-direction: column; /* ترتيب النصوص عموديًا */
-        align-items: center; /* محاذاة النصوص في الوسط */
-        font-size: 11px;  /* تقليل حجم الخط */
+        flex-direction: column; 
+        align-items: center;
+        font-size: 11px; 
     }
 
     .footer-map iframe {
-        height: 250px; /* تقليل ارتفاع الخريطة في الشاشات الصغيرة */
+        height: 250px;
     }
 }
 
 /* تعديل تنسيق الفوتر الصغير */
 .footer-smallprint {
     display: flex;
-    justify-content: space-between;  /* توزيع المسافات بين النصين */
+    justify-content: space-between;  
     align-items: center;
     font-size: 12px;
     color: #ddd;
-    padding: 0 20px;  /* إضافة مسافة بين النصوص وأطراف الفوتر */
+    padding: 0 20px;  
     width: 100%;
     margin-top: 5px;
 }
 
 /* تنسيق الخط الأفقي */
 .footer-line {
-    height: 1.75px; /* سمك الخط */
-    background-color: #ddd; /* لون الخط */
-    margin: 10px 15px 0px 15px; /* المسافة حول الخط */
+    height: 1.75px; 
+    background-color: #ddd;
+    margin: 10px 15px 0px 15px; 
 }
 
 /* النصوص على اليسار واليمين */
 .footer-left,
 .footer-right {
-    margin: 0;  /* إزالة أي مسافة إضافية */
-    padding: 0; /* إزالة أي مسافة إضافية */
+    margin: 0; 
+    padding: 0; 
 }
 
 /* تنسيق الخريطة داخل الفوتر */
@@ -316,19 +316,20 @@ main {
 
 .footer-map iframe {
     width: 100%;
-    height: 175px; /* يمكنك تعديل الارتفاع حسب حاجتك */
+    height: 175px;
     border: none;
-    margin-top: 10px;  /* مسافة بين العنوان والخريطة */
+    margin-top: 10px;  
 }
 
 .footer-section4 {
     display: flex;
-    justify-content: flex-start; /* محاذاة الشعار لليسار */
+    justify-content: flex-start; 
     align-items: center;
-    margin-left: 7px; /* إضافة مسافة يسارية */
+    margin-left: 7px; 
 }
 
 .footer-logo {
     width: 300px; /* عرض الشعار */
     height: 300px;
+
 }
