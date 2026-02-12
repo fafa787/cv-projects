@@ -1,0 +1,360 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* تأكد من أن HTML و Body يغطيان ارتفاع الصفحة بالكامل */
+html, body {
+    height: 100%; /* تأكد من أن الصفحة تأخذ الارتفاع الكامل */
+    margin: 0; /* إزالة المسافات الافتراضية */
+}
+
+/* استخدام Flexbox لتوزيع المحتوى داخل الصفحة */
+body {
+    display: flex;
+    flex-direction: column; /* ترتيب المحتوى عموديًا */
+    font-family: "Segoe UI", Tahoma, Geneva, sans-serif;
+    background-image: url("background.jpeg");
+}
+
+/* تصميم الهيدر */
+.Headerpart1 {
+    background: linear-gradient(to bottom, #012e70, #3b5a89);
+    width: 100%;
+    height: 100px; /* تعديل الارتفاع حسب الحاجة */
+    display: flex;
+    justify-content: space-between;  /* توزيع العناصر بين اليسار واليمين */
+    align-items: center;  /* محاذاة العناصر عموديًا في المنتصف */
+    padding: 0 20px;  /* إضافة بعض الحشو بين الشعار والنص */
+}
+
+/* الشعار */
+.logo {
+    width: 310px;
+    height: 310px;
+    position: absolute; /* تعيين الموقع بناءً على المسافة من الحواف */
+    top: -90px; /* المسافة من الأعلى لتقليص المسافة العلوية */
+    left: -30px ; /* المسافة من اليسار لتقليص المسافة الجانبية */
+}
+/* العنوان */
+.headertext {
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+    text-align: center; /* محاذاة العنوان في المنتصف */
+    flex-grow: 1; /* يسمح للنص بأن يأخذ المساحة المتاحة ليظل في المنتصف */
+}
+
+/* التحكم في المسافة العلوية والسفلية للمحتوى */
+main {
+    padding-top: 120px; /* مسافة علوية لتجنب التداخل مع الهيدر */
+    padding-bottom: 120px; /* مسافة سفلية، يمكنك تعديلها حسب الحاجة */
+}
+
+/* تصميم مستطيلات الحسابات */
+.accounts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 30px;
+    justify-content: center;
+}
+
+/* تصميم مستطيلات الحسابات لتكون أعرض */
+.account-card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 600px;  /* زيادة العرض لتكون أعرض */
+    height: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px auto;  /* هذا يجعل المستطيلات في المنتصف */
+     transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* تغيير لون المستطيل عند المرور عليه */
+.account-card:hover {
+    background-color: #f9f9f9;  /* تغيير اللون */
+    transform: scale(1.05);  /* تأثير التكبير */
+}
+
+/* تغيير لون رابط البريد الإلكتروني عند المرور عليه */
+.email-link {
+    text-decoration: none;
+    color: #555; /* اللون الأساسي */
+    transition: color 0.3s ease;
+}
+
+.email-link:hover {
+    color: #75b377;  /* اللون عند المرور */
+}
+
+/* تصميم العنوان */
+.account-card h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* تنسيق الفقرات داخل الحساب */
+.account-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* تصميم الأزرار */
+.account-buttons {
+    display: flex;
+    justify-content: center; /* محاذاة الأزرار في المنتصف */
+    gap: 10px;  /* تقليل المسافة بين الأزرار */
+}
+
+/* تنسيق الأزرار */
+.btn-approve, .btn-reject {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* زر الموافقة */
+.btn-approve {
+    background-color: #75b377;
+    color: white;
+}
+
+.btn-approve:hover {
+    background-color: #8f908f;
+}
+
+/* زر الرفض */
+.btn-reject {
+    background-color: #f35c51;
+    color: white;
+}
+
+.btn-reject:hover {
+    background-color: #8f908f;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* تعديل الفوتر */
+.footer {
+    background: linear-gradient(to bottom, #012e70, #3b5a89);
+    color: white;
+    padding: 40px 0;
+    font-size: 14px;
+    width: 100%;
+    margin-top: auto; /* هذا سيجعل الفوتر يظل في أسفل الصفحة */
+    margin-bottom: 0;
+}
+
+/* الفوتر يحتوي على أربعة أقسام مع توزيع المسافات */
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* توزيع الأقسام بالتساوي */
+    align-items: flex-start; /* محاذاة الأقسام من الأعلى */
+    width: 100%; /* تأكد من أن الفوتر يغطي العرض الكامل */
+    margin-bottom: -20px;
+}
+
+/* كل قسم في الفوتر */
+.footer-section1,
+.footer-section2,
+.footer-section3,
+.footer-section4 {
+    flex: 1; /* لكل قسم عرض متساوي */
+    margin: 8px;
+    padding: 0 15px; /* إضافة بعض الحشو داخل الأقسام */
+}
+
+/* إضافة خط عمودي بين الأقسام */
+.footer-section1:not(:last-child),
+.footer-section2:not(:last-child) {
+    border-right: 2px solid #ddd;  /* إضافة خط عمودي بين الأقسام */
+    padding-left: 50px;
+}
+
+.footer-section2 {
+    padding-right: 50px;
+    margin-left: -22px; /* تحريك القسم الثاني إلى اليسار بمقدار 20px */
+}
+
+/* تنسيق الروابط في الفوتر */
+.footer-menu {
+    list-style-type: none;
+}
+
+.footer-menu li {
+    margin-bottom: 10px;
+}
+
+.footer-menu li a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 15px;
+}
+
+.footer-menu li a:hover {
+    color: #47556c;
+}
+
+/* تنسيق العناوين داخل الفوتر */
+.footer-section1 h4,
+.footer-section2 h4,
+.footer-section3 h4 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 17px;
+}
+
+/* تعديل النص في الفوتر الصغير */
+.footer-smallprint {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #ddd;
+    padding: 0 20px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* تنسيق الأيقونات في قسم Contact Us */
+.social-icons {
+    display: flex;
+    justify-content: flex-start;  /* ترتيب الأيقونات على يسار الحاوية */
+    gap: 27px;  /* مسافة بين الأيقونات */
+    color: aliceblue;
+}
+
+.social-icons a {
+    display: block;
+    width: 45px;  /* عرض الأيقونة */
+    height: 45px;  /* ارتفاع الأيقونة */
+    transition: transform 0.3s ease; /* إضافة تأثير التحريك عند المرور بالماوس */
+}
+
+.social-icons a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* الحفاظ على تناسق الأيقونة */
+    filter: brightness(0) invert(1); /* تحويل الصورة إلى اللون الأبيض */
+}
+
+/* عند المرور بالماوس على الأيقونة */
+.social-icons a:hover {
+    transform: scale(1.1); /* تكبير الأيقونة عند المرور */
+}
+
+.social-icons a img:hover {
+    filter: brightness(0.5);  /* تغيير السطوع عند المرور */
+}
+
+.footer-left,
+.footer-right {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Footer responsive design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;  /* محاذاة العناصر في الوسط */
+    }
+    
+    .footer-section1, .footer-section2, .footer-section3, .footer-section4 {
+        flex: 1; /* كل قسم يشغل عرض متساوي */
+        margin: 8px 0; /* إضافة مسافة بين الأقسام */
+        padding: 15px;
+    }
+    
+    .footer-section2 {
+        margin-left: 0; /* إزالة المسافة السلبية */
+        padding-right: 0; /* إزالة الحشو على اليمين */
+    }
+    
+    .social-icons {
+        justify-content: center; /* محاذاة الأيقونات في وسط الفوتر */
+        gap: 15px; /* تقليل المسافة بين الأيقونات */
+    }
+
+    .footer-smallprint {
+        flex-direction: column; /* ترتيب النصوص عموديًا */
+        align-items: center; /* محاذاة النصوص في الوسط */
+        font-size: 11px;  /* تقليل حجم الخط */
+    }
+
+    .footer-map iframe {
+        height: 250px; /* تقليل ارتفاع الخريطة في الشاشات الصغيرة */
+    }
+}
+
+/* تعديل تنسيق الفوتر الصغير */
+.footer-smallprint {
+    display: flex;
+    justify-content: space-between;  /* توزيع المسافات بين النصين */
+    align-items: center;
+    font-size: 12px;
+    color: #ddd;
+    padding: 0 20px;  /* إضافة مسافة بين النصوص وأطراف الفوتر */
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* تنسيق الخط الأفقي */
+.footer-line {
+    height: 1.75px; /* سمك الخط */
+    background-color: #ddd; /* لون الخط */
+    margin: 10px 15px 0px 15px; /* المسافة حول الخط */
+}
+
+/* النصوص على اليسار واليمين */
+.footer-left,
+.footer-right {
+    margin: 0;  /* إزالة أي مسافة إضافية */
+    padding: 0; /* إزالة أي مسافة إضافية */
+}
+
+/* تنسيق الخريطة داخل الفوتر */
+.footer-section3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+}
+
+.footer-map iframe {
+    width: 100%;
+    height: 175px; /* يمكنك تعديل الارتفاع حسب حاجتك */
+    border: none;
+    margin-top: 10px;  /* مسافة بين العنوان والخريطة */
+}
+
+.footer-section4 {
+    display: flex;
+    justify-content: flex-start; /* محاذاة الشعار لليسار */
+    align-items: center;
+    margin-left: 7px; /* إضافة مسافة يسارية */
+}
+
+.footer-logo {
+    width: 300px; /* عرض الشعار */
+    height: 300px;
+}

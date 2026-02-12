@@ -1,0 +1,303 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url('Background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    
+}
+
+h1{
+    font-size: 48px;
+}
+
+header{
+
+    background: linear-gradient(to bottom, #012e70, #3b5a89);
+   color: white;
+   padding: 20px;
+   display: flex;
+   align-items: center;
+   justify-content:center; 
+   font-size: 48px;  
+   height:61px;
+   
+}
+
+.logo{
+
+
+   top:-140px;
+
+   left:-40px;
+
+   width: 310px; 
+
+   height: 310px;
+
+   margin-left: 11px;
+
+   position: absolute;
+
+}
+
+img {
+    margin-top: 44px;
+    margin-bottom: 15px;
+   
+
+}
+
+.Box{
+
+
+    border: 2px solid  #012e70;
+    background-color: white;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    font-size: 20px;
+    
+}
+.details-btn {
+    background:  #012e70;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.details-btn:hover{
+    color: rgb(162, 162, 196);
+    transform: scale(1.1);
+    
+}
+.details-btn a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.details-btn a:hover {
+  color: rgb(162, 162, 196);  
+
+}
+
+
+
+
+/* تعديل الفوتر */
+.footer {
+    background: linear-gradient(to bottom, #012e70, #3b5a89);
+    color: white;
+    padding: 40px 0;
+    font-size: 14px;
+    width: 100%;  /* الفوتر سيأخذ العرض الكامل */
+    margin-top: auto; /* هذا سيجعل الفوتر يظل في أسفل الصفحة */
+    margin-bottom: 0;
+}
+
+/* الفوتر يحتوي على أربعة أقسام مع توزيع المسافات */
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* توزيع الأقسام بالتساوي */
+    align-items: flex-start; /* محاذاة الأقسام من الأعلى */
+    width: 100%; /* تأكد من أن الفوتر يغطي العرض الكامل */
+    margin-bottom: -20px;
+}
+
+/* كل قسم في الفوتر */
+.footer-section1,
+.footer-section2,
+.footer-section3,
+.footer-section4 {
+    flex: 1; /* لكل قسم عرض متساوي */
+    margin: 8px;
+    padding: 0 15px; /* إضافة بعض الحشو داخل الأقسام */
+}
+
+/* إضافة خط عمودي بين الأقسام */
+.footer-section1:not(:last-child),
+.footer-section2:not(:last-child) {
+    border-right: 2px solid #ddd;  /* إضافة خط عمودي بين الأقسام */
+    padding-left: 50px;
+}
+
+.footer-section2 {
+    padding-right: 50px;
+    margin-left: -22px; /* تحريك القسم الثاني إلى اليسار بمقدار 20px */
+}
+
+/* تنسيق الروابط في الفوتر */
+.footer-menu {
+    list-style-type: none;
+}
+
+.footer-menu li {
+    margin-bottom: 10px;
+}
+
+.footer-menu li a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 15px;
+}
+
+.footer-menu li a:hover {
+    color: #47556c;
+}
+
+/* تنسيق العناوين داخل الفوتر */
+.footer-section1 h4,
+.footer-section2 h4,
+.footer-section3 h4 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 17px;
+}
+
+/* تعديل النص في الفوتر الصغير */
+.footer-smallprint {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #ddd;
+    padding: 0 20px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* تنسيق الأيقونات في قسم Contact Us */
+.social-icons {
+    display: flex;
+    justify-content: flex-start;  /* ترتيب الأيقونات على يسار الحاوية */
+    gap: 27px;  /* مسافة بين الأيقونات */
+    color: aliceblue;
+}
+
+.social-icons a {
+    display: block;
+    width: 45px;  /* عرض الأيقونة */
+    height: 45px;  /* ارتفاع الأيقونة */
+    transition: transform 0.3s ease; /* إضافة تأثير التحريك عند المرور بالماوس */
+}
+
+.social-icons a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* الحفاظ على تناسق الأيقونة */
+    filter: brightness(0) invert(1); /* تحويل الصورة إلى اللون الأبيض */
+}
+
+/* عند المرور بالماوس على الأيقونة */
+.social-icons a:hover {
+    transform: scale(1.1); /* تكبير الأيقونة عند المرور */
+}
+
+.social-icons a img:hover {
+    filter: brightness(0.5);  /* تغيير السطوع عند المرور */
+}
+
+/* Footer responsive design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;  /* محاذاة العناصر في الوسط */
+    }
+    
+    .footer-section1, .footer-section2, .footer-section3, .footer-section4 {
+        flex: 1; /* كل قسم يشغل عرض متساوي */
+        margin: 8px 0; /* إضافة مسافة بين الأقسام */
+        padding: 15px;
+    }
+    
+    .footer-section2 {
+        margin-left: 0; /* إزالة المسافة السلبية */
+        padding-right: 0; /* إزالة الحشو على اليمين */
+    }
+    
+    .social-icons {
+        justify-content: center; /* محاذاة الأيقونات في وسط الفوتر */
+        gap: 15px; /* تقليل المسافة بين الأيقونات */
+    }
+
+    .footer-smallprint {
+        flex-direction: column; /* ترتيب النصوص عموديًا */
+        align-items: center; /* محاذاة النصوص في الوسط */
+        font-size: 11px;  /* تقليل حجم الخط */
+    }
+
+    .footer-map iframe {
+        height: 250px; /* تقليل ارتفاع الخريطة في الشاشات الصغيرة */
+    }
+}
+
+/* تعديل تنسيق الفوتر الصغير */
+.footer-smallprint {
+    display: flex;
+    justify-content: space-between;  /* توزيع المسافات بين النصين */
+    align-items: center;
+    font-size: 12px;
+    color: #ddd;
+    padding: 0 20px;  /* إضافة مسافة بين النصوص وأطراف الفوتر */
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* تنسيق الخط الأفقي */
+.footer-line {
+    height: 1.75px; /* سمك الخط */
+    background-color: #ddd; /* لون الخط */
+    margin: 10px 15px 0px 15px; /* المسافة حول الخط */
+}
+
+/* النصوص على اليسار واليمين */
+.footer-left,
+.footer-right {
+    margin: 0;  /* إزالة أي مسافة إضافية */
+    padding: 0; /* إزالة أي مسافة إضافية */
+}
+
+/* تنسيق الخريطة داخل الفوتر */
+.footer-section3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+}
+
+.footer-map iframe {
+    width: 100%;
+    height: 175px; /* يمكنك تعديل الارتفاع حسب حاجتك */
+    border: none;
+    margin-top: 10px;  /* مسافة بين العنوان والخريطة */
+}
+
+.footer-section4 {
+    display: flex;
+    justify-content: flex-start; /* محاذاة الشعار لليسار */
+    align-items: center;
+    margin-left: 7px; /* إضافة مسافة يسارية */
+}
+
+.footer-logo {
+    width: 300px; /* عرض الشعار */
+    height: 300px;
+}

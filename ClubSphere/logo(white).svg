@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="utf-8">
+<title>Student Login </title>
+<link rel="stylesheet" type="text/css" href="WebStyle.css">
+</head>
+
+<body>
+
+<div class="login">
+<p class="log"> Login  </p>
+
+<label for="email" class="infoLabel">Email</label><br>
+<input id="email" class="info" name="email" type="text" size="20"><br><br>
+
+<label for="password" class="infoLabel">Password</label><br>
+<input id="password" class="info" name="password" type="password"><br><br>
+
+
+<input class="sub" type="button" value="LOGIN" onclick="window.location.href='Studentmainpage.html'"> <br>
+
+<a href="ForgetPassword.html" class="forget" > Forget Password </a> <br>
+
+</div>
+
+</body>
+</html>

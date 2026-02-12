@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Review</title>
+    <link rel="stylesheet" href="review-style.css"> 
+</head>
+<header>
+    
+    <div class="Headerpart1">
+    <img class="logo" src="logo(white)width.svg" alt="Logo">
+    <h1 class="header-title">Review</h1>
+</header>
+<body>
+
+
+    <div class="container">
+        <form id="reviewForm">
+
+            <label>
+                <h2> place </h2>
+            </label>
+            <div class="rating">
+                <input type="radio" id="place-bad" name="place-rating" value="Bad">
+                <label for="place-bad">Bad</label>
+                
+                <input type="radio" id="place-notGood" name="place-rating" value="Not Good ">
+                <label for="place-bad">Not Good</label>
+
+                <input type="radio" id="place-good" name="place-rating" value="Good">
+                <label for="place-good">Good</label>
+                
+                <input type="radio" id="place-very-good" name="place-rating" value="Very Good">
+                <label for="place-very-good">Very Good</label>
+                
+                <input type="radio" id="place-excellent" name="place-rating" value="Excellent">
+                <label for="place-excellent">Excellent</label>
+            </div>
+
+            <label>
+                <h2>Time</h2>
+            </label>
+            <div class="rating">
+                <input type="radio" id="time-bad" name="time-rating" value="Bad">
+                <label for="time-bad">Bad</label>
+
+                <input type="radio" id="time-NotGood" name="time-rating" value="not Good">
+                <label for="time-NotGood">Not Good</label>
+                
+                <input type="radio" id="time-good" name="time-rating" value="Good">
+                <label for="time-good">Good</label>
+                
+                <input type="radio" id="time-very-good" name="time-rating" value="Very Good">
+                <label for="time-very-good">Very Good</label>
+                
+                <input type="radio" id="time-excellent" name="time-rating" value="Excellent">
+                <label for="time-excellent">Excellent</label>
+            </div>
+
+            <label>
+                <h2>Organization</h2>
+            </label>
+            <div class="rating">
+                <input type="radio" id="org-bad" name="org-rating" value="Bad">
+                <label for="org-bad">Bad</label>
+                
+                <input type="radio" id="org-NotGood" name="org-rating" value="Not Good">
+                <label for="org-Notgood">Not Good</label>
+                
+                <input type="radio" id="org-good" name="org-rating" value="Good">
+                <label for="org-good">Good</label>
+                
+                <input type="radio" id="org-very-good" name="org-rating" value="Very Good">
+                <label for="org-very-good">Very Good</label>
+                
+                <input type="radio" id="org-excellent" name="org-rating" value="Excellent">
+                <label for="org-excellent">Excellent</label>
+            </div>
+
+            <label for="comments">
+               <h2>Additional Comments</h2> 
+            </label>
+            <textarea id="comments" name="comments" rows="3"></textarea>
+
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+             <!-- قسم يحتوي على الشعار -->
+           <div class="footer-section4">
+            <img src="logo(white).svg"alt="Logo" class="footer-logo">
+            </div>
+
+
+            <div class="footer-section1">
+                <h4>Colleges</h4>
+                <ul class="footer-menu">
+                    <li><a href="/en/colleges/health" title="Health">Health</a></li>
+                    <li><a href="/en/colleges/engineering" title="Engineering">Engineering</a></li>
+                    <li><a href="/en/colleges/sciences" title="Sciences and Management">Sciences and Management</a></li>
+                    <li><a href="/en/colleges/arts" title="Arts and Education">Arts and Education</a></li>
+                    <li><a href="/en/colleges/social-sciences" title="Social Sciences">Social Sciences</a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-section2">
+                <h4>Contact Us</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com" title="Facebook">
+                        <img src="facebook.svg" alt="Facebook">
+                    </a>
+
+                    <a href="https://instagram.com" title="instagram">
+                        <img src="instagram.svg" alt="instagram">
+                    </a>
+                    <a href="https://linkedin.com" title="linkedin">
+                        <img src="linkedin.svg" alt="linkedin">
+                    </a>
+                    <a href="https://x.com" title="x" class="x-icon">
+                        <img src="x.svg" alt="x">
+                    </a> 
+                    <a href="https://whatsapp.com" title="whatsApp">
+                        <img src="whatsapp.svg" alt="whatsApp">
+                    </a>
+                </div>
+            </div>
+        
+            <div class="footer-section3">
+                <h4>Our Location</h4>
+                <div class="footer-map">
+                    <iframe  src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d231895.03167743672!2d46.86497690758214!3d24.748847541634948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d24.7660706!2d46.8156074!4m5!1s0x3e2f1d7da06f1b67%3A0x6706faf0b2570bfc!2z2KzYp9mF2LnYqSDYp9mE2YXZhNmDINiz2LnZiNiv2Iwg2KfZhNix2YrYp9i2IDExNDUx4oCt!3m2!1d24.7227575!2d46.622575499999996!5e0!3m2!1sar!2ssa!4v1739529002212!5m2!1sar!2ssa" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+        <!-- الخط الأفقى -->
+        <div class="footer-line"></div>
+    
+        <!-- النصوص الصغيرة في الفوتر -->
+        <div class="footer-smallprint">
+            <span class="footer-left">© 2025 CLUBSPHERE. All rights reserved.</span>
+            <span class="footer-right">Last update on: February 13, 2025 - 12:12 pm</span>
+        </div>
+    </footer>
+</body>
+</html>
